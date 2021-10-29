@@ -1,3 +1,29 @@
 # TKG
 This is an implementation of Topic-level Knowledge Sub-Graphs for Multi-turn Dialogue Generation (https://doi.org/10.1016/j.knosys.2021.107499). 
-TKG accounts for topic-coherence, fluency, and diversity of generated responses. Specifically, we first decompose the given KG into a set of topic-level sub-graphs, with each sub-graph capturing a semantic component of the input KG. Furthermore, we design a Topic-level Sub-graphs Attention Network to calculate the comprehensive representation of both sub-graphs and previous turns of dialogue utterances, which then decoded with the current turn into a response. By using sub-graphs, our model is able to attend to different topical components of the KG and enhance the topic-coherence. We perform extensive experiments on two datasets of DuRecDial and KdConv to demonstrate the effectiveness of our model.The experimental results demonstrate that our model outperforms existing strong baselines.
+![image](https://github.com/Sunrise723/TKG/blob/main/example.png)
+
+# Requirements
+* python3.7
+* cuda10.2
+* pytorch 1.4.0
+* nltk 3.4.4
+* numpy 1.18.1
+* tqdm 4.32.2
+* Memory > 11G (for Knowledge Graphs)
+
+# Data Prepare
+To get the topic-level sub-graphs:
+```Bash
+python preprocess/data_tree.py
+```
+
+# Training & Testing
+```Bash
+bash scripts/preprocess_data.sh
+bash scripts/train_generator.sh
+bash scripts/translate.sh
+```
+# Cite
+If the paper is helpful to your research, please kindly cite our paper:
+>J. Li, Q. Huang, Y. Cai et al., Topic-level knowledge sub-graphs for multi-turn dialogue generation, Knowledge-Based Systems (2021), doi: https://doi.org/10.1016/j.knosys.2021.107499.
+
