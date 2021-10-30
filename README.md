@@ -14,7 +14,9 @@ This is an implementation of Topic-level Knowledge Sub-Graphs for Multi-turn Dia
 # Data Prepare
 To get the topic-level sub-graphs:
 ```Bash
-python preprocess/data_tree.py
+python data_prepare/datapre.py
+python data_prepare/build_tree.py
+python data_prepare/build_cross.py
 ```
 
 # Training & Testing
