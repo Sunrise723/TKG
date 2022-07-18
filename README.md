@@ -27,5 +27,5 @@ bash scripts/translate.sh
 ```
 # Cite
 If the paper is helpful to your research, please kindly cite our paper:
->Jing. Li, Q. Huang, Y. Cai et al., Topic-level knowledge sub-graphs for multi-turn dialogue generation, Knowledge-Based Systems (2021), doi: https://doi.org/10.1016/j.knosys.2021.107499.
+>J. Li, Q. Huang, Y. Cai et al., Topic-level knowledge sub-graphs for multi-turn dialogue generation, Knowledge-Based Systems (2021), doi: https://doi.org/10.1016/j.knosys.2021.107499.
 
